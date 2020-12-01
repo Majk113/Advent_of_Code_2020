@@ -1,3 +1,3 @@
 ﻿  Day_1.cpp
-G:\AdventOfCode\Day_1\Day_1\Day_1\Day_1.cpp(17): warning C4715: 'solution': not all control paths return a value
-  Day_1.vcxproj -> G:\AdventOfCode\Day_1\Day_1\Debug\Day_1.exe
+G:\AdventOfCode\Advent_of_Code_2020\Day_1\Day_1\Day_1.cpp(15): warning C4715: 'solution': not all control paths return a value
+  Day_1.vcxproj -> G:\AdventOfCode\Advent_of_Code_2020\Day_1\Debug\Day_1.exe

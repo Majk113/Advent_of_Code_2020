@@ -4,13 +4,11 @@ int solution(int input[])
 {
     int sizeOfArray = 200;
 
-    for (int i = 0; i < sizeOfArray; ++i)
+    for (int i = 0; i < sizeOfArray-1; ++i)
     {
-        for (int j = 0; j < sizeOfArray; ++j)
+        for (int j = i+1; j < sizeOfArray; ++j)
         {
-            if (i == j)
-                continue;
-            else if ((input[i] + input[j]) == 2020)
+            if ((input[i] + input[j]) == 2020)
                 return (input[i] * input[j]);
         }
     }
@@ -20,15 +18,13 @@ int solution2(int input[])
 {
     int sizeOfArray = 200;
 
-    for (int i = 0; i < sizeOfArray; ++i)
+    for (int i = 0; i < sizeOfArray-2; ++i)
     {
-        for (int j = 0; j < sizeOfArray; ++j)
+        for (int j = i+1; j < sizeOfArray-1; ++j)
         {
-            for (int k = 0; k < sizeOfArray; ++k)
+            for (int k = j+1; k < sizeOfArray; ++k)
             {
-                if ((k == i) || (k == j) || (j == i))
-                    continue;
-                else if ((input[k] + input[j] + input[i]) == 2020)
+                if ((input[k] + input[j] + input[i]) == 2020)
                     return (input[k] * input[j] * input[i]);
             }
         }
