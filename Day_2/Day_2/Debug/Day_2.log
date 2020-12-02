@@ -1,0 +1,3 @@
+﻿  Day_2.cpp
+G:\AdventOfCode\Advent_of_Code_2020\Day_2\Day_2\Day_2.cpp(42,9): warning C4101: 'validPasswords': unreferenced local variable
+  Day_2.vcxproj -> G:\AdventOfCode\Advent_of_Code_2020\Day_2\Debug\Day_2.exe
