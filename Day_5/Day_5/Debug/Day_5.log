@@ -1,0 +1,7 @@
+﻿  Day_5.cpp
+G:\AdventOfCode\Advent_of_Code_2020\Day_5\Day_5\Day_5.cpp(18,33): warning C4244: '+=': conversion from 'double' to 'int', possible loss of data
+G:\AdventOfCode\Advent_of_Code_2020\Day_5\Day_5\Day_5.cpp(22,33): warning C4244: '-=': conversion from 'double' to 'int', possible loss of data
+G:\AdventOfCode\Advent_of_Code_2020\Day_5\Day_5\Day_5.cpp(33,33): warning C4244: '+=': conversion from 'double' to 'int', possible loss of data
+G:\AdventOfCode\Advent_of_Code_2020\Day_5\Day_5\Day_5.cpp(37,33): warning C4244: '-=': conversion from 'double' to 'int', possible loss of data
+G:\AdventOfCode\Advent_of_Code_2020\Day_5\Day_5\Day_5.cpp(59,23): warning C4018: '<': signed/unsigned mismatch
+  Day_5.vcxproj -> G:\AdventOfCode\Advent_of_Code_2020\Day_5\Debug\Day_5.exe
