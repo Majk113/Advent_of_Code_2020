@@ -1,0 +1,4 @@
+﻿  Day_8.cpp
+G:\AdventOfCode\Advent_of_Code_2020\Day_8\Day_8\Day_8.cpp(58,23): warning C4018: '<': signed/unsigned mismatch
+G:\AdventOfCode\Advent_of_Code_2020\Day_8\Day_8\Day_8.cpp(60,27): warning C4018: '<': signed/unsigned mismatch
+  Day_8.vcxproj -> G:\AdventOfCode\Advent_of_Code_2020\Day_8\Debug\Day_8.exe
