@@ -1,2 +1,3 @@
 ﻿  Day_9.cpp
+G:\AdventOfCode\Advent_of_Code_2020\Day_9\Day_9\Day_9.cpp(51,28): warning C4101: 'endOfDivision': unreferenced local variable
   Day_9.vcxproj -> G:\AdventOfCode\Advent_of_Code_2020\Day_9\Debug\Day_9.exe

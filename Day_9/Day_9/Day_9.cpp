@@ -6,7 +6,7 @@
 
 bool findTwoNumbersToSum(std::vector<unsigned long long int>::iterator beginRange, 
                          std::vector<unsigned long long int>::iterator stopRange, 
-                         unsigned long long sum)
+                         unsigned long long int sum)
 {
     for (auto i = beginRange; i <= stopRange; ++i)
     {
@@ -19,11 +19,36 @@ bool findTwoNumbersToSum(std::vector<unsigned long long int>::iterator beginRang
     return false;
 }
 
+std::vector<unsigned long long int>::iterator findConiguousSum(std::vector<unsigned long long int>::iterator beginRange, 
+                                                               unsigned long long int sum)
+{
+    unsigned long long int currentSum = *beginRange;
+    std::vector<unsigned long long int>::iterator savedFirstPosition = beginRange;
+
+    while (currentSum < sum)
+    {
+        ++beginRange;
+        currentSum += *beginRange;
+    } 
+
+    if (currentSum == sum)
+    {
+        return beginRange;
+    }
+    else
+    {
+        return savedFirstPosition;
+    }
+
+}
+
 
 int main()
 {
     std::vector<unsigned long long int> input;
     unsigned long long int largeNumber;
+    unsigned long long int sumToFind = 0;
+    unsigned long long int endOfDivision;
 
     for (int i=0; i<1000; ++i )
     {
@@ -39,8 +64,22 @@ int main()
     {
         if (!findTwoNumbersToSum(preambleStart, preambleStop, *number))
         {
-            std::cout << *number;
+            sumToFind = *number;
+            std::cout << sumToFind << "\n";
             break;
         }
     }
-}
+
+    for (auto divisionStart = input.begin(); divisionStart < input.end(); ++divisionStart)
+    {
+        auto endOfDivisionPointer = findConiguousSum(divisionStart, sumToFind);
+        
+        if (endOfDivisionPointer != divisionStart)
+        {
+            auto minMax = std::minmax_element(divisionStart, endOfDivisionPointer);
+            unsigned long long int result = *(minMax.first) + *(minMax.second);
+            std::cout << result << "\n";
+            break;
+        }
+    }
+}   
