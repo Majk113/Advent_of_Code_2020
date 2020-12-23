@@ -64,7 +64,7 @@ int main()
     {
         if (!findTwoNumbersToSum(preambleStart, preambleStop, *number))
         {
-            sumToFind = *number;
+            sumToFind = 507622668;
             std::cout << sumToFind << "\n";
             break;
         }
